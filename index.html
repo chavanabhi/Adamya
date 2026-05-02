@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="mr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>अदम्य वाद्य पथक, पुणे | Adamya Vadhya Pathak</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Noto+Serif:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background": "#131411",
+                        "on-primary": "#003641",
+                        "inverse-on-surface": "#31302d",
+                        "surface-container-lowest": "#0e0e0c",
+                        "surface-variant": "#353532",
+                        "secondary-fixed-dim": "#ffb77b",
+                        "surface-container-highest": "#353532",
+                        "on-primary-container": "#a9eaff",
+                        "on-secondary-fixed-variant": "#6d3a00",
+                        "tertiary-container": "#a94402",
+                        "surface-bright": "#3a3936",
+                        "tertiary-fixed-dim": "#ffb694",
+                        "primary-fixed": "#b0ecff",
+                        "on-secondary-fixed": "#2e1500",
+                        "on-tertiary-container": "#ffd9c9",
+                        "on-background": "#e5e2dd",
+                        "tertiary-fixed": "#ffdbcc",
+                        "surface-container": "#20201d",
+                        "secondary": "#ffb77b",
+                        "surface-tint": "#83d2e9",
+                        "on-surface": "#e5e2dd",
+                        "outline-variant": "#3f484c",
+                        "outline": "#889296",
+                        "on-tertiary-fixed": "#351000",
+                        "on-tertiary-fixed-variant": "#7b2f00",
+                        "on-error": "#690005",
+                        "surface-container-high": "#2a2a27",
+                        "inverse-surface": "#e5e2dd",
+                        "on-secondary-container": "#ffb270",
+                        "surface": "#131411",
+                        "on-tertiary": "#571f00",
+                        "on-surface-variant": "#bec8cc",
+                        "on-secondary": "#4d2700",
+                        "on-error-container": "#ffdad6",
+                        "primary-container": "#006d82",
+                        "primary": "#83d2e9",
+                        "tertiary": "#ffb694",
+                        "error": "#ffb4ab",
+                        "secondary-fixed": "#ffdcc2",
+                        "primary-fixed-dim": "#83d2e9",
+                        "surface-container-low": "#1c1c19",
+                        "on-primary-fixed": "#001f27",
+                        "secondary-container": "#7a4100",
+                        "surface-dim": "#131411",
+                        "inverse-primary": "#00687c",
+                        "error-container": "#93000a",
+                        "on-primary-fixed-variant": "#004e5e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-gap": "80px",
+                        "margin-edge": "32px",
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "label-sm": ["Manrope"],
+                        "display-lg": ["Noto Serif"],
+                        "headline-sm": ["Noto Serif"],
+                        "headline-md": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "display-lg": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-sm": ["20px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "headline-md": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .noise-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.03;
+            pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at center, rgba(131, 210, 233, 0.15) 0%, rgba(19, 20, 17, 1) 70%);
+        }
+        .cinematic-card {
+            border: 1px solid rgba(136, 146, 150, 0.1);
+            transition: all 0.3s ease;
+        }
+        .cinematic-card:hover {
+            border-color: #ffb77b;
+            box-shadow: 0 0 20px rgba(131, 210, 233, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container relative" data-mode="connect">
+<div class="noise-overlay z-0"></div>
+<!-- TopAppBar -->
+<nav class="docked full-width top-0 z-50 bg-slate-950/80 backdrop-blur-md font-serif tracking-wide text-sm uppercase border-b border-teal-900/30 flat no shadows transition-all duration-300 ease-in-out fixed left-0 w-full flex justify-between items-center px-4 md:px-8 py-4">
+<div class="text-xl md:text-2xl font-bold text-slate-50 font-serif tracking-tighter">
+            अदम्य
+        </div>
+<div class="hidden md:flex space-x-8">
+<a class="text-slate-300 hover:text-teal-200 transition-colors hover:bg-teal-900/20 hover:text-white px-3 py-2 rounded" href="#">Spirit</a>
+<a class="text-slate-300 hover:text-teal-200 transition-colors hover:bg-teal-900/20 hover:text-white px-3 py-2 rounded" href="#">Tradition</a>
+<a class="text-slate-300 hover:text-teal-200 transition-colors hover:bg-teal-900/20 hover:text-white px-3 py-2 rounded" href="#">Performance</a>
+<a class="text-slate-300 hover:text-teal-200 transition-colors hover:bg-teal-900/20 hover:text-white px-3 py-2 rounded" href="#">Gallery</a>
+<a class="text-teal-400 border-b-2 border-orange-400 pb-1 hover:bg-teal-900/20 hover:text-white px-3 py-2 rounded" href="https://docs.google.com/forms/d/e/1FAIpQLSdSuC1ASmEgdXnvOGrzOGzaNws4hg4bnpR6rEfnTjUNvmtSRw/viewform" target="_blank">Join Us</a>
+</div>
+<button class="md:hidden text-slate-300 hover:text-teal-200 transition-colors">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+<button class="hidden md:block bg-primary-container text-on-primary-container px-6 py-2 rounded-DEFAULT font-label-sm uppercase tracking-wider hover:bg-inverse-primary transition-colors border-b-2 border-secondary" onclick="document.getElementById('leadership').scrollIntoView({behavior: 'smooth'})">
+            Contact
+        </button>
+</nav>
+<main class="relative z-10 w-full">
+<!-- Hero Section -->
+<section class="relative w-full min-h-screen flex items-center justify-center pt-20 pb-12 overflow-hidden hero-gradient">
+<div class="absolute inset-0 z-0 opacity-20 bg-cover bg-center" data-alt="A cinematic, high-quality background mural of a powerful Indian Maharashtrian male dhol player in traditional performance attire. Intense and proud expression, dynamic motion playing a large dhol drum. The atmospheric lighting features subtle dust and light textures, enhancing the mood. Deep blacks and pristine whites are prominent, creating a sacred, majestic feel typical of the 'Sacred Rhythms' aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDVZwKQdcPHhNV5OPy6dAUHyFCMEKXYcTE-2lsoHfHKR7Ug7NeXjjrx-XGs5pip5N9M1NkLHy0nsB6-AwQoAn-Y2GPKQBUSquM1DUeVLwoRaVvPq1QAtH32lAofWgt-W3hctasR_GK5h1ppG7vaKUOH689hMlrtMztcByKKjIYCBCxwaFabvhJXJaV0YT-NgW-Y30DvzV4vBgkJqov64rMH5WNJH__Wpy_iWvDiDvP6rLTp1mesJLdaxb8OAjNwwq6Yxlx6sE14Ui0C');"></div>
+<div class="relative z-10 w-full max-w-[1280px] mx-auto px-4 sm:px-[32px] flex flex-col items-center text-center">
+<img alt="Adamya Logo" class="w-32 h-32 md:w-64 md:h-64 object-contain mb-6 filter drop-shadow-[0_0_15px_rgba(255,183,123,0.3)]" data-alt="The sacred logo of the Adamya Vadhya Pathak, glowing against a dark atmospheric background. The logo features deep teal and copper tones, embodying traditional Maharashtrian cultural depth and cinematic modernity. It sits centrally, illuminated as if by a spotlight in a night-time procession. The overall mood is prestigious, majestic, and thunderous." src="https://lh3.googleusercontent.com/aida/ADBb0ugTElvafj-X_c54EVPAJAem8n4-B2BY00hGW2bADgxzFw0Wwrt4ZFbr-Heq6hcRpXDvkkt3tMU-DHQfOsoPX05SWCNDBCkUfkoc6caaAnt2IWnFzJo49kxPZWW-Ec_Tsa-m4TwQx2dxzVQ2XyHVeVo1nnvyegD4kT5hdEmJUbai0aY10N4PGjJfjgECFqdcubbF7ZYP5FAfbirNmqMpDvZwpXXq-0Z1Anw6Y64F03T_-eP11ktm7E1fjq0AHZOEZVPbbCFhi5Ug-Pw"/>
+<h1 class="font-display-lg text-display-lg text-on-background mb-3 md:mb-4">अदम्य वाद्य पथक, पुणे</h1>
+<p class="font-headline-sm text-headline-sm text-secondary-fixed-dim mb-8 max-w-2xl px-4">परंपरा, शिस्त आणि नादब्रह्माचा ध्यास</p>
+<div class="flex flex-col sm:flex-row gap-4 w-full px-4 sm:w-auto">
+<a class="bg-primary-container text-on-primary-container px-6 py-3 md:px-8 md:py-4 rounded-DEFAULT font-label-sm text-label-sm uppercase tracking-wider hover:bg-inverse-primary transition-colors border-b-[2px] border-secondary shadow-[0_4px_14px_0_rgba(0,109,130,0.39)] inline-block text-center w-full sm:w-auto" href="https://docs.google.com/forms/d/e/1FAIpQLSdSuC1ASmEgdXnvOGrzOGzaNws4hg4bnpR6rEfnTjUNvmtSRw/viewform" target="_blank">Join Us</a>
+<button class="bg-transparent border border-outline text-on-surface px-6 py-3 md:px-8 md:py-4 rounded-DEFAULT font-label-sm text-label-sm uppercase tracking-wider hover:border-secondary hover:text-secondary transition-colors w-full sm:w-auto" onclick="document.getElementById('leadership').scrollIntoView({behavior: 'smooth'})">
+                        Contact
+                    </button>
+</div>
+</div>
+<div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce opacity-60">
+<span class="font-label-sm text-label-sm text-outline mb-1">DISCOVER</span>
+<span class="material-symbols-outlined text-outline">expand_more</span>
+</div>
+</section>
+<!-- Divider -->
+<div class="w-full flex items-center justify-center py-8 opacity-50">
+<div class="h-px w-16 md:w-24 bg-gradient-to-r from-transparent to-outline"></div>
+<div class="w-2 h-2 md:w-3 md:h-3 rotate-45 border border-secondary mx-4"></div>
+<div class="h-px w-16 md:w-24 bg-gradient-to-l from-transparent to-outline"></div>
+</div>
+<!-- About Section -->
+<section class="w-full max-w-[1280px] mx-auto px-4 md:px-[32px] py-12 md:py-[80px]">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+<div class="text-center md:text-left order-2 md:order-1">
+<h2 class="font-headline-md text-headline-md text-primary mb-4 md:mb-6">लय, चैतन्य आणि एकता</h2>
+<div class="space-y-4 md:space-y-6 font-body-md md:font-body-lg text-body-md md:text-body-lg text-on-surface-variant">
+<p class="">अदम्य वाद्य पथक ही केवळ एक संस्था नाही, तर ढोल-ताशाच्या निनादात एकत्र येणारी एक उर्जा आहे. आमचा उद्देश केवळ वादन करणे नाही, तर महाराष्ट्राची गौरवशाली परंपरा आणि संस्कृती प्रत्येक वादनातून जिवंत ठेवणे हा आहे.</p>
+<p class="">शिस्त, एकाग्रता आणि नादब्रह्माचा ध्यास हे आमचे मूळ स्तंभ आहेत. प्रत्येक ठोका हा आमच्या एकतेचे आणि श्रद्धेचे प्रतीक आहे. आम्ही एक अशी जागा तयार करत आहोत जिथे ताल आणि चैतन्य यांचा संगम होतो.</p>
+</div>
+</div>
+<div class="relative w-full aspect-square md:aspect-auto md:h-full rounded-xl overflow-hidden cinematic-card p-2 bg-surface-container-low order-1 md:order-2">
+<div class="w-full h-full bg-surface-container-high rounded-lg relative overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 opacity-30 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/20 via-background to-background"></div>
+<span class="material-symbols-outlined text-6xl md:text-[120px] text-surface-tint opacity-20 relative z-10">pace</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<section class="w-full py-12 md:py-16 bg-surface-container-lowest border-t border-outline-variant/20" id="leadership">
+<div class="max-w-[1280px] mx-auto px-4 md:px-[32px] flex flex-col md:flex-row justify-between items-center gap-8 md:gap-12">
+<div class="text-center md:text-left w-full md:w-auto">
+<h3 class="font-label-sm text-label-sm text-secondary uppercase tracking-[0.2em] mb-2 md:mb-4">First vadak -</h3>
+<p class="font-display-lg text-headline-md text-on-surface mb-2">Nikhil Bhole</p>
+<a class="font-body-md md:font-body-lg text-primary flex items-center justify-center md:justify-start gap-2" href="tel:9004403080">
+<span class="material-symbols-outlined text-base md:text-lg">call</span>
+                9004403080
+            </a>
+</div>
+<div class="h-px w-full md:w-px md:h-24 bg-gradient-to-r md:bg-gradient-to-b from-transparent via-outline to-transparent opacity-30 my-4 md:my-0"></div>
+<div class="text-center md:text-right w-full md:w-auto">
+<h3 class="font-label-sm text-label-sm text-secondary uppercase tracking-[0.2em] mb-2 md:mb-4">Contact Us</h3>
+<div class="space-y-2 font-body-md md:font-body-lg text-on-surface-variant">
+<p class="flex items-center justify-center md:justify-end gap-2"><span class="material-symbols-outlined text-base md:text-lg">call</span> 9004403080, 7620528101</p>
+<p class="flex items-center justify-center md:justify-end gap-2"><span class="material-symbols-outlined text-base md:text-lg">location_on</span> सराव ठिकाण - छत्रपती शिवाजी महाराज चौक, हिंजवडी</p>
+</div>
+</div>
+</div>
+</section><footer class="w-full border-t border-teal-900/50 pt-8 pb-6 md:pt-12 md:pb-8 bg-slate-950 font-serif text-slate-400 text-xs flat no shadows tapered-horizontal-line-with-copper-mandala flex flex-col items-center justify-center text-center space-y-4 md:space-y-6 px-4"><div class="text-lg md:text-xl font-bold text-teal-500 mb-2">अदम्य वाद्य पथक</div>
+<div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-6">
+<a class="text-slate-500 hover:text-orange-400 transition-colors" href="#">Spirit of Rhythm</a>
+<a class="text-slate-500 hover:text-orange-400 transition-colors" href="#">Performance Rules</a>
+<a class="text-slate-500 hover:text-orange-400 transition-colors" href="#">Terms of Honor</a>
+<a class="text-primary hover:text-secondary transition-colors flex items-center justify-center gap-1 font-label-sm uppercase" href="https://www.instagram.com/adamya_pune" target="_blank">
+<span class="material-symbols-outlined text-base md:text-lg">browse_gallery</span> Instagram
+    </a>
+</div>
+<div class="text-slate-500 max-w-md mt-4">
+    सराव ठिकाण - छत्रपती शिवाजी महाराज चौक, हिंजवडी<br/>
+    संपर्क: 9004403080 / 7620528101
+</div>
+<div class="text-teal-600 mt-4 md:mt-6">
+    © २०२४ अदम्य वाद्य पथक, पुणे. All Rights Reserved.
+</div></footer>
+</main>
+</body></html>
